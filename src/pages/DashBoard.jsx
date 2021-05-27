@@ -168,7 +168,7 @@ export const DashBoard = ({ handleLoggedOut }) => {
           
           {/* Nombre de la aplicación / empresa */}
           <Typography component="h1" variant="h6" color="inherit" className={classes.title} noWrap>
-            Imagina ReactJS Dashboard
+            Banca Online
           </Typography>
           {/* Sección de Notificaciones para el Usuario */}
           <IconButton color="inherit">
