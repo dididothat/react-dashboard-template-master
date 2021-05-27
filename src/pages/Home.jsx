@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import { creditCardsMapper } from '../data/creditCardsMapper';
 import { CreditCard } from '../components/CreditCard';
+import { BalanceTotal } from '../components/Balance';
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -45,6 +46,7 @@ export const Home = () => {
         <Paper className={fixedHeightPaper}>
           <Typography variant="h5" component="h1">
             Balance total
+            <BalanceTotal/>
           </Typography>
         </Paper>
       </Grid>
