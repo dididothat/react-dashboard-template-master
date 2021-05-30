@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
 
   selectedBackGround: {
     backgroundColor: '#CD092C',
+    pointerEvents: 'none'
   },
   
   unselectedBackGround: {
