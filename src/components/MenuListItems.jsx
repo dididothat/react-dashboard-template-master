@@ -44,14 +44,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const MenuListItems = ({ list }) => {
+/* const MenuListItems = ({ list, handleDrawer }) => {
+  const history = useHistory();
+
+  const navegar = (ruta) => {
+    history.push(ruta);
+    handleDrawer();
+  }; */
+
+
+const MenuListItems = ({ list, handleDrawer }) => {
   const history = useHistory();
   const classes = useStyles();
   const location = useLocation();
 
   const navegar = (ruta) => {
     history.push(ruta);
-    //handleDrawer();
+    handleDrawer();
   };
   // Color del background de la lista en función de la ruta actual
   const changeBackGround =  (ruta) => {
@@ -64,7 +73,7 @@ const MenuListItems = ({ list }) => {
         <ListItem key={index}  className={changeBackGround(path) ? classes.selectedBackGround : classes.unselectedBackGround} button onClick={() => navegar(path)}>
           <ListItemIcon>
             {/* Llamamos al método getIcon que nos va a devover el 
-                            componente Icono que toque */}
+            componente Icono que toque */}
             {getIcon(icon)}
           </ListItemIcon>
           <ListItemText primary={text} />

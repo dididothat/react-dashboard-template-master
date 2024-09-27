@@ -40,7 +40,7 @@ export const Home = () => {
 
   return (
     <>
-      <Grid item md={7} >
+      <Grid item md={7}>
         <Paper className={fixedHeightPaper}>
           <Typography variant="h5" component="h1" className={classes.titleH1}>
             Tarjetas
@@ -51,12 +51,12 @@ export const Home = () => {
             ))}
           </div>
         </Paper>
-        
       </Grid>
+
       <Grid item md={5}>
         <Paper className={fixedHeightPaper}>
           <Typography variant="h5" component="h1" className={classes.titleH1}>
-            <Balances/>
+            <Balances />
           </Typography>
         </Paper>
       </Grid>
@@ -65,22 +65,6 @@ export const Home = () => {
           <Movements />
         </Paper>
       </Grid>
-      {/*       <Grid item xs={12} md={8} >
-        <Paper className={fixedHeightPaper}>
-          <Typography variant="h4">Tarjetas</Typography>
-          {getCreditCards()}
-        </Paper>
-      </Grid>
-      <Grid item xs={12} md={4} >
-        <Paper className={fixedHeightPaper}>
-          <Typography>Segunda caja</Typography>
-        </Paper>
-      </Grid>
-      <Grid item xs={12} md={8} >
-        <Paper className={fixedHeightPaper}>
-          <Typography>Tercera caja</Typography>
-        </Paper>
-      </Grid> */}
     </>
   );
 };
